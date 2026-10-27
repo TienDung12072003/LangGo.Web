@@ -1,0 +1,89 @@
+.langgo-vocab-box {
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.95);
+  border-radius: var(--radius-lg);
+  padding: 12px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  box-shadow: 0 4px 18px rgba(148, 163, 184, 0.06);
+}
+
+.langgo-vocab-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 10px;
+  border-radius: var(--radius-md);
+  transition: background var(--transition-fast);
+}
+
+.langgo-vocab-item:hover {
+  background: rgba(248, 250, 252, 0.8);
+}
+
+.langgo-vocab-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.langgo-vocab-check {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 1.5px solid #10B981;
+  color: #10B981;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.langgo-vocab-word {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--color-text-main);
+}
+
+.langgo-vocab-mid {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #94A3B8;
+  font-size: 12px;
+  font-style: italic;
+  cursor: pointer;
+  transition: color var(--transition-fast);
+}
+
+.langgo-vocab-mid:hover {
+  color: var(--color-primary-blue);
+}
+
+.langgo-cefr-badge {
+  font-size: 10px;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: var(--radius-full);
+}
+
+.langgo-cefr-badge--a1 {
+  background: #ECFDF5;
+  color: #10B981;
+}
+
+.langgo-cefr-badge--a2 {
+  background: #EFF6FF;
+  color: #3B82F6;
+}
+
+.langgo-cefr-badge--b1 {
+  background: #F5F3FF;
+  color: #8B5CF6;
+}
+
+.langgo-cefr-badge--b2 {
+  background: #FFFBEB;
+  color: #F59E0B;
+}

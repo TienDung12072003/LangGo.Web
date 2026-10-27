@@ -1,0 +1,219 @@
+.langgo-login-wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.langgo-login-card {
+  width: 100%;
+  max-width: 1040px;
+  min-height: 640px;
+  background: rgba(255, 255, 255, 0.94);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(255, 255, 255, 0.95);
+  border-radius: var(--radius-xl);
+  box-shadow: 0 24px 60px rgba(129, 140, 248, 0.16), 0 2px 10px rgba(0, 0, 0, 0.03);
+  display: grid;
+  grid-template-columns: 1.18fr 1fr;
+  overflow: hidden;
+}
+
+/* Left Brand & Visual Column */
+.langgo-login-visual {
+  position: relative;
+  background: linear-gradient(145deg, #FFF7F2 0%, #FFEFE6 40%, #FFE8DC 80%, #FFF3EB 100%);
+  padding: 40px 36px 0 36px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  border-right: 1px solid var(--color-primary-coral-border);
+}
+
+.langgo-login-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  z-index: 2;
+}
+
+.langgo-login-brand-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background: var(--gradient-btn-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+  box-shadow: 0 4px 12px rgba(249, 87, 56, 0.3);
+}
+
+.langgo-login-brand-title {
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: var(--color-navy);
+  letter-spacing: -0.02em;
+}
+
+.langgo-login-headline-wrap {
+  margin-top: 24px;
+  max-width: 400px;
+  z-index: 2;
+}
+
+.langgo-login-headline {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--color-navy);
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+.langgo-login-headline span {
+  color: var(--color-primary-coral);
+  background: var(--gradient-btn-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.langgo-login-subline {
+  font-size: var(--font-size-sm);
+  color: #64748B;
+  margin-top: 8px;
+  line-height: 1.45;
+}
+
+/* Floating Word Chips & Big Illustration Wrap */
+.langgo-floating-chips-wrap {
+  position: relative;
+  width: 100%;
+  flex: 1;
+  min-height: 340px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  z-index: 2;
+  margin-top: 10px;
+}
+
+/* Floating Chips */
+.langgo-floating-chip {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  border-radius: var(--radius-md);
+  padding: 8px 14px;
+  box-shadow: 0 6px 18px rgba(148, 163, 184, 0.16);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  z-index: 4;
+}
+
+.langgo-floating-chip:hover {
+  transform: translateY(-2px) scale(1.04);
+  background: #FFFFFF;
+  box-shadow: 0 8px 22px rgba(148, 163, 184, 0.22);
+}
+
+.langgo-floating-chip--improve {
+  left: 10px;
+  bottom: 220px;
+  transform: rotate(-3deg);
+}
+
+.langgo-floating-chip--confidence {
+  left: 48%;
+  bottom: 245px;
+  transform: rotate(2deg);
+}
+
+.langgo-floating-chip--progress {
+  right: -5px;
+  bottom: 120px;
+}
+
+.langgo-chip-icon {
+  color: var(--color-primary-coral);
+}
+
+.langgo-chip-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.langgo-chip-word {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--color-navy);
+}
+
+.langgo-chip-ipa {
+  font-size: 10px;
+  color: #94A3B8;
+}
+
+/* Subtle sparkles */
+.langgo-sparkle-star {
+  position: absolute;
+  color: var(--color-primary-coral);
+  opacity: 0.8;
+  pointer-events: none;
+  z-index: 3;
+}
+
+.langgo-sparkle-star--1 {
+  top: 15px;
+  left: 140px;
+  font-size: 14px;
+}
+
+.langgo-sparkle-star--2 {
+  top: 60px;
+  right: 25px;
+  font-size: 18px;
+}
+
+/* Big Hero Illustration */
+.langgo-login-illustration {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  margin-bottom: 0;
+  filter: drop-shadow(0 14px 30px rgba(0, 0, 0, 0.08));
+  z-index: 2;
+  transition: transform var(--transition-normal);
+}
+
+/* Right Form Column */
+.langgo-login-form-col {
+  padding: 48px 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #FFFFFF;
+}
+
+@media (max-width: 960px) {
+  .langgo-login-card {
+    grid-template-columns: 1fr;
+    max-width: 480px;
+  }
+  .langgo-login-visual {
+    display: none;
+  }
+  .langgo-login-form-col {
+    padding: 36px 24px;
+  }
+}

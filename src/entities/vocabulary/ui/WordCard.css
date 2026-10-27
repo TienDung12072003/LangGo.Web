@@ -1,0 +1,41 @@
+.word-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-2);
+}
+
+.word-card__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.word-card__term {
+  font-size: var(--font-size-lg);
+  font-weight: 700;
+  color: var(--color-primary-blue-hover);
+}
+
+.word-card__ipa {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-muted);
+  font-style: italic;
+}
+
+.word-card__meaning {
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  color: var(--color-text-main);
+  line-height: 1.4;
+}
+
+.word-card__example {
+  margin-top: 4px;
+  padding: 8px 12px;
+  background: rgba(239, 246, 255, 0.6);
+  border-left: 3px solid var(--color-cyan);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  font-size: var(--font-size-xs);
+  color: var(--color-text-muted);
+  line-height: 1.4;
+}

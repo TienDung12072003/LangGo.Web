@@ -1,0 +1,41 @@
+.langgo-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  border-radius: var(--radius-full);
+  font-size: var(--font-size-xs);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  line-height: 1;
+}
+
+.langgo-badge--blue {
+  background: var(--color-primary-blue-light);
+  color: var(--color-primary-blue);
+  border: 1px solid rgba(59, 130, 246, 0.2);
+}
+
+.langgo-badge--cyan {
+  background: var(--color-cyan-light);
+  color: var(--color-cyan-hover);
+  border: 1px solid rgba(6, 182, 212, 0.2);
+}
+
+.langgo-badge--lavender {
+  background: var(--color-lavender-light);
+  color: var(--color-lavender);
+  border: 1px solid var(--color-lavender-border);
+}
+
+.langgo-badge--success {
+  background: var(--color-success-light);
+  color: var(--color-success);
+  border: 1px solid rgba(16, 185, 129, 0.2);
+}
+
+.langgo-badge--warning {
+  background: var(--color-warning-light);
+  color: var(--color-warning);
+  border: 1px solid rgba(245, 158, 11, 0.2);
+}

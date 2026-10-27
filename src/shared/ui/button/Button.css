@@ -1,0 +1,102 @@
+.langgo-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-2);
+  font-weight: 600;
+  border-radius: var(--radius-md);
+  transition: all var(--transition-fast);
+  white-space: nowrap;
+  user-select: none;
+}
+
+/* Sizes */
+.langgo-btn--sm {
+  padding: 6px 12px;
+  font-size: var(--font-size-xs);
+  border-radius: var(--radius-sm);
+}
+
+.langgo-btn--md {
+  padding: 10px 18px;
+  font-size: var(--font-size-sm);
+}
+
+.langgo-btn--lg {
+  padding: 14px 24px;
+  font-size: var(--font-size-base);
+  border-radius: var(--radius-lg);
+}
+
+/* Variants */
+.langgo-btn--primary {
+  background: var(--gradient-btn-primary);
+  color: #FFFFFF;
+  box-shadow: 0 4px 14px rgba(249, 87, 56, 0.25);
+}
+
+.langgo-btn--primary:hover:not(:disabled) {
+  background: var(--gradient-btn-primary-hover);
+  box-shadow: 0 6px 20px rgba(249, 87, 56, 0.35);
+  transform: translateY(-1px);
+}
+
+.langgo-btn--accent {
+  background: linear-gradient(135deg, var(--color-cyan), #0891B2);
+  color: #FFFFFF;
+  box-shadow: 0 4px 14px rgba(6, 182, 212, 0.25);
+}
+
+.langgo-btn--accent:hover:not(:disabled) {
+  background: linear-gradient(135deg, #0891B2, #0E7490);
+  box-shadow: 0 6px 20px rgba(6, 182, 212, 0.35);
+  transform: translateY(-1px);
+}
+
+.langgo-btn--lavender {
+  background: linear-gradient(135deg, var(--color-lavender), #7C3AED);
+  color: #FFFFFF;
+  box-shadow: 0 4px 14px rgba(139, 92, 246, 0.25);
+}
+
+.langgo-btn--lavender:hover:not(:disabled) {
+  background: linear-gradient(135deg, #7C3AED, #6D28D9);
+  box-shadow: 0 6px 20px rgba(139, 92, 246, 0.35);
+  transform: translateY(-1px);
+}
+
+.langgo-btn--secondary {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: var(--glass-blur-sm);
+  color: var(--color-text-main);
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--shadow-sm);
+}
+
+.langgo-btn--secondary:hover:not(:disabled) {
+  background: #FFFFFF;
+  border-color: #CBD5E1;
+  transform: translateY(-1px);
+}
+
+.langgo-btn--ghost {
+  color: var(--color-text-muted);
+  background: transparent;
+}
+
+.langgo-btn--ghost:hover:not(:disabled) {
+  background: rgba(241, 245, 249, 0.7);
+  color: var(--color-text-main);
+}
+
+/* Disabled */
+.langgo-btn:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+  transform: none !important;
+  box-shadow: none !important;
+}
+
+.langgo-btn:active:not(:disabled) {
+  transform: translateY(1px);
+}

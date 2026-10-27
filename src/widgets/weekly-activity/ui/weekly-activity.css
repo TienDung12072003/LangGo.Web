@@ -1,0 +1,116 @@
+.langgo-weekly-card {
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.95);
+  border-radius: var(--radius-lg);
+  padding: 16px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 4px 18px rgba(148, 163, 184, 0.06);
+  height: calc(100% - 44px);
+}
+
+.langgo-weekly-card__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.langgo-weekly-card__title {
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: var(--color-text-main);
+}
+
+.langgo-weekly-card__dropdown-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--color-text-muted);
+  background: rgba(241, 245, 249, 0.7);
+  padding: 4px 10px;
+  border-radius: var(--radius-full);
+  border: 1px solid rgba(226, 232, 240, 0.8);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.langgo-weekly-card__dropdown-btn:hover {
+  color: var(--color-primary-coral);
+  border-color: var(--color-primary-coral-border);
+}
+
+.langgo-weekly-chart {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  height: 90px;
+  padding: 0 8px 6px 8px;
+  border-bottom: 1px solid rgba(226, 232, 240, 0.8);
+  margin-bottom: 14px;
+}
+
+.langgo-weekly-bar-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  height: 100%;
+  justify-content: flex-end;
+}
+
+.langgo-weekly-bar {
+  width: 14px;
+  border-radius: var(--radius-full);
+  background: #FFE4D6;
+  transition: all var(--transition-fast);
+}
+
+.langgo-weekly-bar:hover {
+  transform: scaleY(1.05);
+}
+
+.langgo-weekly-bar--active {
+  background: var(--gradient-btn-primary);
+  box-shadow: 0 2px 8px rgba(249, 87, 56, 0.35);
+}
+
+.langgo-weekly-day {
+  font-size: 10px;
+  font-weight: 600;
+  color: #94A3B8;
+}
+
+.langgo-weekly-stats {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 4px;
+}
+
+.langgo-weekly-stat-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  color: #64748B;
+  font-weight: 600;
+}
+
+.langgo-weekly-stat-item span strong {
+  color: var(--color-navy);
+  font-weight: 800;
+}
+
+.langgo-weekly-stat-icon {
+  width: 22px;
+  height: 22px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

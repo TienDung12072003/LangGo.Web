@@ -1,0 +1,118 @@
+:root {
+  /* ==========================================================================
+     LangGo Design System Tokens
+     Palette: Kem (Warm Cream) + Cam San Hô (Coral Orange) + Deep Navy
+     ========================================================================== */
+
+  /* Primary Brand: Cam San Hô (Coral Orange) */
+  --color-primary-coral: #FF6B4A;
+  --color-primary-coral-hover: #F95738;
+  --color-primary-coral-dark: #E04322;
+  --color-primary-coral-light: #FFF2EB;
+  --color-primary-coral-border: #FFD9CA;
+
+  /* Aliases for general primary */
+  --color-primary-blue: var(--color-primary-coral);
+  --color-primary-blue-hover: var(--color-primary-coral-hover);
+  --color-primary-blue-light: var(--color-primary-coral-light);
+
+  /* Deep Navy (Heading & Primary Text) */
+  --color-navy: #0F172A;
+  --color-navy-dark: #020617;
+  --color-navy-light: #1E293B;
+
+  /* Warm Cream Neutral Surfaces */
+  --color-cream-bg: #FAF6F0;
+  --color-cream-surface: #FFFFFF;
+  --color-cream-border: rgba(238, 230, 219, 0.85);
+
+  /* Secondary Accents */
+  --color-cyan: #06B6D4;
+  --color-cyan-hover: #0891B2;
+  --color-cyan-light: #ECFEFF;
+
+  --color-lavender: #8B5CF6;
+  --color-lavender-hover: #7C3AED;
+  --color-lavender-light: #F5F3FF;
+  --color-lavender-border: #E0E7FF;
+
+  /* Gradients */
+  --gradient-btn-primary: linear-gradient(135deg, #FF6B4A 0%, #F95738 100%);
+  --gradient-btn-primary-hover: linear-gradient(135deg, #F95738 0%, #E04322 100%);
+  --gradient-hero: linear-gradient(135deg, #FFF5EE 0%, #FFE9DE 45%, #FFDFCF 80%, #FFE3D6 100%);
+  --gradient-streak: linear-gradient(135deg, #FFA07A 0%, #FF6B4A 50%, #F95738 100%);
+  --gradient-fluency: linear-gradient(135deg, #FFF3EB 0%, #FFE4D5 100%);
+
+  /* CEFR Badges */
+  --color-cefr-a1: #10B981;
+  --color-cefr-a1-bg: #ECFDF5;
+  --color-cefr-a2: #3B82F6;
+  --color-cefr-a2-bg: #EFF6FF;
+  --color-cefr-b1: #8B5CF6;
+  --color-cefr-b1-bg: #F5F3FF;
+  --color-cefr-b2: #F59E0B;
+  --color-cefr-b2-bg: #FFFBEB;
+
+  /* Status Colors */
+  --color-success: #10B981;
+  --color-success-light: #ECFDF5;
+  --color-warning: #F59E0B;
+  --color-warning-light: #FFFBEB;
+  --color-danger: #EF4444;
+  --color-danger-light: #FEF2F2;
+
+  /* Neutral & Text Colors */
+  --color-text-main: #0F172A;
+  --color-text-muted: #64748B;
+  --color-text-subtle: #94A3B8;
+  --color-border-subtle: rgba(226, 219, 208, 0.7);
+
+  /* Glassmorphism Surface Tokens */
+  --glass-bg: rgba(255, 255, 255, 0.88);
+  --glass-bg-hover: rgba(255, 255, 255, 0.96);
+  --glass-bg-solid: #FFFFFF;
+  --glass-border: rgba(255, 255, 255, 0.95);
+  --glass-border-subtle: rgba(238, 230, 219, 0.65);
+  --glass-blur: blur(12px);
+  --glass-blur-sm: blur(6px);
+
+  /* Shadows with warm tint */
+  --shadow-sm: 0 1px 3px rgba(15, 23, 42, 0.04), 0 1px 2px rgba(15, 23, 42, 0.02);
+  --shadow-md: 0 4px 16px -2px rgba(249, 87, 56, 0.08), 0 2px 6px -1px rgba(0, 0, 0, 0.02);
+  --shadow-lg: 0 12px 30px -4px rgba(249, 87, 56, 0.12), 0 4px 12px -2px rgba(0, 0, 0, 0.03);
+  --shadow-card: 0 4px 20px rgba(180, 160, 140, 0.07);
+
+  /* Radii */
+  --radius-xs: 6px;
+  --radius-sm: 10px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+  --radius-full: 9999px;
+
+  /* Typography Scale */
+  --font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-size-xs: 0.75rem;     /* 12px */
+  --font-size-sm: 0.875rem;    /* 14px */
+  --font-size-base: 1rem;      /* 16px */
+  --font-size-lg: 1.125rem;    /* 18px */
+  --font-size-xl: 1.25rem;     /* 20px */
+  --font-size-2xl: 1.5rem;     /* 24px */
+  --font-size-3xl: 1.875rem;   /* 30px */
+
+  /* Spacing Scale */
+  --spacing-1: 0.25rem;
+  --spacing-2: 0.5rem;
+  --spacing-3: 0.75rem;
+  --spacing-4: 1rem;
+  --spacing-5: 1.25rem;
+  --spacing-6: 1.5rem;
+  --spacing-8: 2rem;
+  --spacing-10: 2.5rem;
+  --spacing-12: 3rem;
+
+  /* Transitions */
+  --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: 240ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-smooth: 350ms cubic-bezier(0.16, 1, 0.3, 1);
+}

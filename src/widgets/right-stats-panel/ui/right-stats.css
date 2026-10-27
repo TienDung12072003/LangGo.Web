@@ -1,0 +1,224 @@
+.langgo-right-panel {
+  width: 270px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Card 1: Streak Ring Card */
+.langgo-streak-ring-card {
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.95);
+  border-radius: var(--radius-xl);
+  padding: 24px 20px 16px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 6px 24px rgba(148, 163, 184, 0.08);
+}
+
+.langgo-streak-ring-wrap {
+  position: relative;
+  width: 140px;
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.langgo-streak-ring-center {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.1;
+}
+
+.langgo-streak-flame {
+  font-size: 20px;
+  margin-bottom: 2px;
+}
+
+.langgo-streak-number {
+  font-size: 28px;
+  font-weight: 800;
+  color: #1E293B;
+  letter-spacing: -0.02em;
+}
+
+.langgo-streak-unit {
+  font-size: 11px;
+  font-weight: 600;
+  color: #64748B;
+  margin-top: 2px;
+}
+
+.langgo-streak-quote {
+  font-size: 12px;
+  color: #475569;
+  font-weight: 500;
+  margin: 16px 0 14px 0;
+  line-height: 1.4;
+  z-index: 2;
+}
+
+.langgo-streak-mountain-bg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background: linear-gradient(180deg, transparent, rgba(255, 230, 218, 0.5));
+  pointer-events: none;
+  z-index: 1;
+}
+
+.langgo-set-goal-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 14px;
+  border-radius: var(--radius-full);
+  background: rgba(255, 250, 246, 0.95);
+  border: 1px solid var(--color-primary-coral-border);
+  font-size: 12px;
+  font-weight: 600;
+  color: #475569;
+  z-index: 2;
+  transition: all var(--transition-fast);
+}
+
+.langgo-set-goal-btn:hover {
+  background: #FFFFFF;
+  color: var(--color-primary-blue);
+  box-shadow: var(--shadow-sm);
+}
+
+/* Card 2: Top Learners */
+.langgo-top-learners-card {
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.95);
+  border-radius: var(--radius-xl);
+  padding: 18px;
+  box-shadow: 0 6px 24px rgba(148, 163, 184, 0.08);
+}
+
+.langgo-top-learners-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.langgo-top-learners-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.langgo-learner-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.langgo-learner-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.langgo-learner-rank {
+  font-size: 11px;
+  font-weight: 700;
+  color: #94A3B8;
+  width: 14px;
+  text-align: center;
+}
+
+.langgo-learner-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.langgo-learner-info {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.langgo-learner-name {
+  font-size: 12px;
+  font-weight: 700;
+  color: #1E293B;
+}
+
+.langgo-learner-hours {
+  font-size: 11px;
+  color: #94A3B8;
+}
+
+.langgo-learner-crown {
+  font-size: 14px;
+}
+
+/* Card 3: Fluency Inspiration Card */
+.langgo-fluency-card {
+  position: relative;
+  background: var(--gradient-fluency);
+  border: 1px solid var(--color-primary-coral-border);
+  border-radius: var(--radius-xl);
+  padding: 18px 20px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(249, 87, 56, 0.08);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 115px;
+}
+
+.langgo-fluency-text {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--color-navy);
+  line-height: 1.4;
+  max-width: 180px;
+  z-index: 2;
+}
+
+.langgo-fluency-btn {
+  align-self: flex-start;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--gradient-btn-primary);
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 12px;
+  box-shadow: 0 2px 8px rgba(249, 87, 56, 0.3);
+  z-index: 2;
+}
+
+.langgo-fluency-deco {
+  position: absolute;
+  right: -20px;
+  bottom: -20px;
+  width: 120px;
+  height: 90px;
+  background: linear-gradient(135deg, rgba(255, 218, 195, 0.6), rgba(255, 180, 150, 0.3));
+  border-radius: 50%;
+  filter: blur(14px);
+  z-index: 1;
+}

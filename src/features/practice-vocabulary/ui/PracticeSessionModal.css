@@ -1,0 +1,88 @@
+.practice-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.45);
+  backdrop-filter: var(--glass-blur-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: var(--spacing-4);
+  animation: fadeIn 0.2s ease;
+}
+
+.practice-modal-card {
+  width: 100%;
+  max-width: 520px;
+  background: #FFFFFF;
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-lg);
+  padding: var(--spacing-8);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-6);
+  position: relative;
+  border: 1px solid rgba(226, 232, 240, 0.8);
+}
+
+.practice-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.practice-card-box {
+  background: linear-gradient(135deg, #F8FAFC, #EEF2FF);
+  border: 2px dashed #CBD5E1;
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-8);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-3);
+  cursor: pointer;
+  transition: all var(--transition-normal);
+}
+
+.practice-card-box:hover {
+  border-color: var(--color-primary-blue);
+  background: linear-gradient(135deg, #EFF6FF, #EEF2FF);
+}
+
+.practice-term {
+  font-size: var(--font-size-3xl);
+  font-weight: 800;
+  color: var(--color-primary-blue-hover);
+}
+
+.practice-ipa {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+}
+
+.practice-meaning-box {
+  margin-top: var(--spacing-2);
+  padding: var(--spacing-3) var(--spacing-6);
+  background: #FFFFFF;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  border: 1px solid rgba(226, 232, 240, 0.8);
+  animation: slideUp 0.2s ease;
+}
+
+.practice-actions {
+  display: flex;
+  gap: var(--spacing-4);
+  justify-content: center;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}

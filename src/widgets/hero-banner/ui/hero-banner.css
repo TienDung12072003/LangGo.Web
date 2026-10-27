@@ -1,0 +1,112 @@
+.langgo-hero-banner {
+  position: relative;
+  border-radius: var(--radius-xl);
+  padding: 32px 36px;
+  background: var(--gradient-hero);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(249, 87, 56, 0.1);
+  border: 1px solid rgba(255, 235, 225, 0.9);
+  margin-bottom: 24px;
+}
+
+.langgo-hero-banner__content {
+  position: relative;
+  z-index: 2;
+  max-width: 440px;
+}
+
+.langgo-hero-banner__title {
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: var(--color-navy);
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+.langgo-hero-banner__desc {
+  font-size: var(--font-size-sm);
+  color: #475569;
+  line-height: 1.5;
+  margin: 10px 0 20px 0;
+}
+
+.langgo-hero-banner__btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 22px;
+  border-radius: var(--radius-full);
+  background: var(--gradient-btn-primary);
+  color: #FFFFFF;
+  font-size: var(--font-size-sm);
+  font-weight: 700;
+  box-shadow: 0 4px 16px rgba(249, 87, 56, 0.35);
+  transition: all var(--transition-fast);
+}
+
+.langgo-hero-banner__btn:hover {
+  transform: translateY(-2px);
+  background: var(--gradient-btn-primary-hover);
+  box-shadow: 0 6px 22px rgba(249, 87, 56, 0.45);
+}
+
+/* Illustration on the right */
+.langgo-hero-banner__graphic {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.langgo-hero-banner__quote {
+  font-family: 'Brush Script MT', cursive, var(--font-family);
+  font-size: 1.5rem;
+  color: var(--color-primary-coral);
+  position: absolute;
+  top: -12px;
+  right: 170px;
+  white-space: nowrap;
+  transform: rotate(-6deg);
+  pointer-events: none;
+  z-index: 3;
+}
+
+.langgo-hero-banner__img {
+  width: 260px;
+  height: auto;
+  max-height: 155px;
+  object-fit: contain;
+  filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.08));
+  margin-bottom: -18px;
+  margin-right: -10px;
+  z-index: 2;
+}
+
+/* Atmospheric background hills decoration */
+.langgo-hero-banner__hill-1 {
+  position: absolute;
+  right: -40px;
+  bottom: -60px;
+  width: 320px;
+  height: 200px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, rgba(255, 218, 195, 0.6), rgba(254, 205, 185, 0.3));
+  filter: blur(20px);
+  z-index: 1;
+}
+
+.langgo-hero-banner__hill-2 {
+  position: absolute;
+  right: 120px;
+  bottom: -40px;
+  width: 240px;
+  height: 160px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, rgba(255, 235, 220, 0.7), rgba(255, 215, 190, 0.4));
+  filter: blur(24px);
+  z-index: 1;
+}

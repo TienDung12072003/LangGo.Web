@@ -1,0 +1,124 @@
+.langgo-stat-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.langgo-stat-card {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  border-radius: var(--radius-lg);
+  padding: 18px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 4px 18px rgba(148, 163, 184, 0.06);
+  position: relative;
+  transition: all var(--transition-fast);
+  cursor: pointer;
+}
+
+.langgo-stat-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(148, 163, 184, 0.12);
+  background: #FFFFFF;
+}
+
+.langgo-stat-card__top {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.langgo-stat-card__icon-box {
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.langgo-stat-card__icon-box--purple {
+  background: var(--color-primary-coral-light);
+  color: var(--color-primary-coral);
+}
+
+.langgo-stat-card__icon-box--teal {
+  background: #CCFBF1;
+  color: #0D9488;
+}
+
+.langgo-stat-card__icon-box--blue {
+  background: #DBEAFE;
+  color: #2563EB;
+}
+
+.langgo-stat-card__icon-box--yellow {
+  background: #FEF3C7;
+  color: #D97706;
+}
+
+.langgo-stat-card__label {
+  font-size: 13px;
+  color: var(--color-text-muted);
+  font-weight: 600;
+}
+
+.langgo-stat-card__value {
+  font-size: 1.45rem;
+  font-weight: 800;
+  color: var(--color-navy);
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+  margin-bottom: 8px;
+}
+
+.langgo-stat-card__value span {
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  color: var(--color-text-muted);
+  margin-left: 4px;
+}
+
+.langgo-stat-card__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.langgo-stat-card__badge {
+  font-size: 11px;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.langgo-stat-card__badge--streak {
+  color: var(--color-primary-coral);
+}
+
+.langgo-stat-card__badge--positive {
+  color: #059669;
+}
+
+.langgo-stat-card__arrow {
+  color: #CBD5E1;
+  transition: transform var(--transition-fast), color var(--transition-fast);
+}
+
+.langgo-stat-card:hover .langgo-stat-card__arrow {
+  color: var(--color-primary-coral);
+  transform: translateX(2px);
+}
+
+@media (max-width: 1024px) {
+  .langgo-stat-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

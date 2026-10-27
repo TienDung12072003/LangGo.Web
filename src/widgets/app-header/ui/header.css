@@ -1,0 +1,132 @@
+.langgo-header {
+  height: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.langgo-header__search-wrap {
+  position: relative;
+  width: 380px;
+  max-width: 100%;
+}
+
+.langgo-header__search-icon {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #94A3B8;
+  pointer-events: none;
+}
+
+.langgo-header__search-input {
+  width: 100%;
+  padding: 10px 16px 10px 44px;
+  font-size: var(--font-size-sm);
+  font-family: inherit;
+  border-radius: var(--radius-full);
+  border: 1px solid rgba(255, 255, 255, 0.85);
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(10px);
+  color: var(--color-text-main);
+  outline: none;
+  box-shadow: 0 2px 10px rgba(148, 163, 184, 0.05);
+  transition: all var(--transition-fast);
+}
+
+.langgo-header__search-input::placeholder {
+  color: #94A3B8;
+  font-size: var(--font-size-sm);
+}
+
+.langgo-header__search-input:focus {
+  background: #FFFFFF;
+  border-color: var(--color-primary-coral);
+  box-shadow: 0 0 0 3px rgba(255, 107, 74, 0.15);
+}
+
+.langgo-header__actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.langgo-header__circle-btn {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  color: #64748B;
+  transition: all var(--transition-fast);
+  position: relative;
+  box-shadow: 0 2px 6px rgba(148, 163, 184, 0.06);
+}
+
+.langgo-header__circle-btn:hover {
+  background: #FFFFFF;
+  color: var(--color-primary-coral);
+  transform: translateY(-1px);
+}
+
+.langgo-header__badge-dot {
+  position: absolute;
+  top: 9px;
+  right: 9px;
+  width: 7px;
+  height: 7px;
+  background: var(--color-primary-coral);
+  border-radius: 50%;
+  border: 1.5px solid #FFFFFF;
+}
+
+.langgo-header__profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 4px 8px 4px 4px;
+  border-radius: var(--radius-full);
+  cursor: pointer;
+  transition: background var(--transition-fast);
+}
+
+.langgo-header__profile:hover {
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.langgo-header__avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #FFFFFF;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.langgo-header__profile-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.langgo-header__profile-name {
+  font-size: var(--font-size-sm);
+  font-weight: 700;
+  color: var(--color-text-main);
+}
+
+.langgo-header__profile-level {
+  font-size: 11px;
+  color: var(--color-text-muted);
+}
+
+.langgo-header__chevron {
+  color: #94A3B8;
+  margin-left: 2px;
+}
